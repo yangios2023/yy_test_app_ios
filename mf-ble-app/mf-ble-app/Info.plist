@@ -20,6 +20,27 @@
 				</dict>
 			</array>
 		</dict>
-	</dict>
+	</dict> 
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>This is required to detect your position in front of a gate and guarantees a correct gate release.</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Let me use your Bluetooth! This is required to pass your ticket to the gate.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>We need to access the camera to scan QR codes</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>This is required to communicate with the gate, to open it for you.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We do not access your location. Only for accessing bluetooth range estimations.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Always allow me to use your location information in front of gate.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Allow me to use your location information in front of gate.!!!</string>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>bluetooth-central</string>
+        <string>fetch</string>
+        <string>location</string>
+        <string>processing</string>
+    </array>
 </dict>
 </plist>

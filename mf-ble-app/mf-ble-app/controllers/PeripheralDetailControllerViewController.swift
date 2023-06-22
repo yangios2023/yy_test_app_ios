@@ -11,7 +11,7 @@ import Combine
 class PeripheralDetailControllerViewController: UIViewController {
 
     @IBAction func button2(_ sender: UIButton) {
-        print(peripheral?.pname)
+        //dump(peripheral)
     }
     
     var peripheral : IosBlePeripheral?

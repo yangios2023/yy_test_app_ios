@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		162106F791A01C97152F4294 /* Pods_mf_ble_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B55258CFB720174C7C5FB2 /* Pods_mf_ble_app.framework */; };
+		7C4A72582A4471C200C90F7E /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A72572A4471C200C90F7E /* UserLocationManager.swift */; };
+		7C4A725A2A4489C600C90F7E /* PeripheralsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A72592A4489C600C90F7E /* PeripheralsManager.swift */; };
+		7C4A725C2A44956C00C90F7E /* AdvDataManufacturerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A725B2A44956C00C90F7E /* AdvDataManufacturerDataModel.swift */; };
+		7C4A725F2A4496D200C90F7E /* ext_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A725E2A4496D200C90F7E /* ext_String.swift */; };
+		7C4A72612A4496EA00C90F7E /* ext_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A72602A4496EA00C90F7E /* ext_Date.swift */; };
 		7CD0E5A22A436FF400275AA1 /* PeripheralDetailControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0E5A12A436FF400275AA1 /* PeripheralDetailControllerViewController.swift */; };
 		7CD0E5A52A437C1600275AA1 /* IosBlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0E5A42A437C1600275AA1 /* IosBlePeripheral.swift */; };
 		7CD93F942A406739008FBD64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD93F932A406739008FBD64 /* AppDelegate.swift */; };
@@ -44,6 +49,11 @@
 		59D0EFD3F6B43C851FC3889D /* Pods-mf-ble-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mf-ble-app.release.xcconfig"; path = "Target Support Files/Pods-mf-ble-app/Pods-mf-ble-app.release.xcconfig"; sourceTree = "<group>"; };
 		6189D6BA9D21372CCC848327 /* Pods-mf-ble-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mf-ble-appTests.debug.xcconfig"; path = "Target Support Files/Pods-mf-ble-appTests/Pods-mf-ble-appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FBC08D584F53CA7EB1397E2 /* Pods-mf-ble-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mf-ble-appTests.release.xcconfig"; path = "Target Support Files/Pods-mf-ble-appTests/Pods-mf-ble-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C4A72572A4471C200C90F7E /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
+		7C4A72592A4489C600C90F7E /* PeripheralsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralsManager.swift; sourceTree = "<group>"; };
+		7C4A725B2A44956C00C90F7E /* AdvDataManufacturerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvDataManufacturerDataModel.swift; sourceTree = "<group>"; };
+		7C4A725E2A4496D200C90F7E /* ext_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ext_String.swift; sourceTree = "<group>"; };
+		7C4A72602A4496EA00C90F7E /* ext_Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ext_Date.swift; sourceTree = "<group>"; };
 		7CD0E5A12A436FF400275AA1 /* PeripheralDetailControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDetailControllerViewController.swift; sourceTree = "<group>"; };
 		7CD0E5A42A437C1600275AA1 /* IosBlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosBlePeripheral.swift; sourceTree = "<group>"; };
 		7CD93F902A406739008FBD64 /* mf-ble-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mf-ble-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C4A72562A4471AE00C90F7E /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				7C4A72572A4471C200C90F7E /* UserLocationManager.swift */,
+				7C4A72592A4489C600C90F7E /* PeripheralsManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		7C4A725D2A4496B700C90F7E /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C4A725E2A4496D200C90F7E /* ext_String.swift */,
+				7C4A72602A4496EA00C90F7E /* ext_Date.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		7CD0E5A02A436FAB00275AA1 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD0E5A42A437C1600275AA1 /* IosBlePeripheral.swift */,
+				7C4A725B2A44956C00C90F7E /* AdvDataManufacturerDataModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -137,8 +166,10 @@
 		7CD93F922A406739008FBD64 /* mf-ble-app */ = {
 			isa = PBXGroup;
 			children = (
+				7C4A725D2A4496B700C90F7E /* extensions */,
 				7CD93F932A406739008FBD64 /* AppDelegate.swift */,
 				7CD93F952A406739008FBD64 /* SceneDelegate.swift */,
+				7C4A72562A4471AE00C90F7E /* managers */,
 				7CD0E5A32A437BDD00275AA1 /* models */,
 				7CD0E5A02A436FAB00275AA1 /* controllers */,
 				7CD93F992A406739008FBD64 /* Main.storyboard */,
@@ -186,7 +217,6 @@
 				6189D6BA9D21372CCC848327 /* Pods-mf-ble-appTests.debug.xcconfig */,
 				6FBC08D584F53CA7EB1397E2 /* Pods-mf-ble-appTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -431,9 +461,14 @@
 			files = (
 				7CD93F982A406739008FBD64 /* StartViewController.swift in Sources */,
 				7CD93F942A406739008FBD64 /* AppDelegate.swift in Sources */,
+				7C4A725F2A4496D200C90F7E /* ext_String.swift in Sources */,
+				7C4A725C2A44956C00C90F7E /* AdvDataManufacturerDataModel.swift in Sources */,
 				7CD93F962A406739008FBD64 /* SceneDelegate.swift in Sources */,
 				7CD0E5A22A436FF400275AA1 /* PeripheralDetailControllerViewController.swift in Sources */,
 				7CD0E5A52A437C1600275AA1 /* IosBlePeripheral.swift in Sources */,
+				7C4A72582A4471C200C90F7E /* UserLocationManager.swift in Sources */,
+				7C4A725A2A4489C600C90F7E /* PeripheralsManager.swift in Sources */,
+				7C4A72612A4496EA00C90F7E /* ext_Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
